@@ -1,15 +1,19 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import NavBar from '../NavBar';
+import NavBar from '../Nav/NavBar';
+import { Box } from '@mui/material';
+import HomePageContent from './HomePageContent';
 
 function HomePage() {
-  const navigate = useNavigate();
-
   return (
-    <div>
+    <Box
+      style={{
+        display: 'flex',
+        flexDirection: 'row',
+      }}
+    >
       <NavBar />
-      test
-    </div>
+      <HomePageContent />
+    </Box>
   );
 }
 
