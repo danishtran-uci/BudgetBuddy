@@ -2,8 +2,8 @@ import React from 'react';
 import { Box, Typography } from '@mui/material';
 import profileIcon from './penguin.jpg';
 import HomeIcon from '@mui/icons-material/Home';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import BarChartIcon from '@mui/icons-material/BarChart';
+import ListIcon from '@mui/icons-material/List';
+import SavingsIcon from '@mui/icons-material/Savings';
 import SettingsIcon from '@mui/icons-material/Settings';
 
 const spanStyle = {
@@ -28,12 +28,12 @@ function NavBar() {
   return (
     <Box
       style={{
-        width:'20vw',
-        height:'100vh',
+        width: '20vw',
+        height: '100vh',
         backgroundColor: '#D9D9D9',
       }}
     >
-      <Box 
+      <Box
         style={{
           height: '100%',
           width: '100%',
@@ -43,15 +43,15 @@ function NavBar() {
           justifyContent: 'space-around',
         }}
       >
-        <img 
-          src={profileIcon} 
+        <img
+          src={profileIcon}
           alt="profileImage"
           style={{
             height: '25vh',
             width: '25vh',
             objectFit: 'cover',
             borderRadius: '50%',
-          }} 
+          }}
         />
         <span style={spanStyle}>
           <HomeIcon style={iconStyle} />
@@ -60,15 +60,15 @@ function NavBar() {
           </Typography>
         </span>
         <span style={spanStyle}>
-          <BarChartIcon style={iconStyle} />
+          <ListIcon style={iconStyle} />
           <Typography style={textStyle}>
-            Chart
+            Data
           </Typography>
         </span>
         <span style={spanStyle}>
-          <CalendarMonthIcon style={iconStyle} />
+          <SavingsIcon style={iconStyle} />
           <Typography style={textStyle}>
-            Calendar
+            Budget
           </Typography>
         </span>
         <span style={spanStyle}>

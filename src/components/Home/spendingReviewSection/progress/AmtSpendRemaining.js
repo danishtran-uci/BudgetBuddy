@@ -7,11 +7,11 @@ function AmtSpendRemaining() {
       {/* Amount Spend and Remaining */}
       <Box
         style={{
-          width:'100%',
-          height:'30%',
+          width: '100%',
+          height: '30%',
           display: 'flex',
           flexDirection: 'row',
-          justifyContent: 'center'
+          justifyContent: 'center',
         }}
       >
         {/* Amount Spend*/}
@@ -19,17 +19,18 @@ function AmtSpendRemaining() {
           style={{
             marginTop: '1vh',
             marginRight: '5vw',
-            width:'40%',
-            height:'80%',
+            width: '50%',
+            height: '90%',
             backgroundColor: '#D9D9D9',
             display: 'flex',
-            alignItems:'center',
+            alignItems: 'center',
             justifyContent: 'center'
           }}
         >
           <Typography
             style={{
-              fontWeight: 'bold',                    
+              fontWeight: 'bold',
+              fontSize: '2vh',
             }}
           >
             Amount Spend: Temp
@@ -40,17 +41,18 @@ function AmtSpendRemaining() {
         <Box
           style={{
             marginTop: '1vh',
-            width:'40%',
-            height:'80%',
+            width: '50%',
+            height: '90%',
             backgroundColor: '#D9D9D9',
             display: 'flex',
-            alignItems:'center',
+            alignItems: 'center',
             justifyContent: 'center'
           }}
         >
           <Typography
             style={{
-              fontWeight: 'bold',                    
+              fontWeight: 'bold',
+              fontSize: '2vh',
             }}
           >
             Amount Remaining: Temp
