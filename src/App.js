@@ -7,6 +7,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route
+          path="/budget-buddy"
+          element={<HomePage />}
+        />
+        <Route
           path="/"
           element={<HomePage />}
         />
