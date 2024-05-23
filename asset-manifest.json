@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/budget-buddy/static/css/main.827893e8.css",
-    "main.js": "/budget-buddy/static/js/main.a38eebe8.js",
-    "static/media/penguin.jpg": "/budget-buddy/static/media/penguin.97d9be13765878fffd57.jpg",
-    "index.html": "/budget-buddy/index.html",
-    "main.827893e8.css.map": "/budget-buddy/static/css/main.827893e8.css.map",
-    "main.a38eebe8.js.map": "/budget-buddy/static/js/main.a38eebe8.js.map"
+    "main.css": "/www.budget-buddy.com/static/css/main.827893e8.css",
+    "main.js": "/www.budget-buddy.com/static/js/main.c46bcf08.js",
+    "static/media/penguin.jpg": "/www.budget-buddy.com/static/media/penguin.97d9be13765878fffd57.jpg",
+    "index.html": "/www.budget-buddy.com/index.html",
+    "main.827893e8.css.map": "/www.budget-buddy.com/static/css/main.827893e8.css.map",
+    "main.c46bcf08.js.map": "/www.budget-buddy.com/static/js/main.c46bcf08.js.map"
   },
   "entrypoints": [
     "static/css/main.827893e8.css",
-    "static/js/main.a38eebe8.js"
+    "static/js/main.c46bcf08.js"
   ]
 }
