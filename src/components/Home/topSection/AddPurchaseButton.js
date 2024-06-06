@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import PurchaseDialog from './PurchaseDialog';
 
 const iconButtonTextStyle = {
-  fontSize: '1.5vh',
+  fontSize: '1vw',
   color: 'grey'
 }
 
@@ -41,7 +41,7 @@ function AddPurchaseButton({ handleAddPurchaseData }) {
         <IconButton onClick={handleClickOpen}>
           <AddBoxIcon 
             style={{
-              fontSize: '7vh'
+              fontSize: '5vw'
             }}
           />
         </IconButton>

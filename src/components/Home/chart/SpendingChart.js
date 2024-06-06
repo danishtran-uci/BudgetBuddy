@@ -1,6 +1,7 @@
 import React from 'react';
 import { Bar } from 'react-chartjs-2';
 import 'chart.js/auto';
+import { Box } from '@mui/material';
 
 const options = {
   scales: {
@@ -65,7 +66,31 @@ function SpendingChart({ purchaseData }) {
     datasets: datasets,
   };
 
-  return <Bar data={data} options={options} />;
+  return (
+    <Box
+      style={{
+        width:'100%',
+        height:'55%',
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems:'center',
+        justifyContent: 'space-evenly',
+      }}
+    >
+      <Box
+        style={{
+          width:'65%',
+          height:'90%',
+          backgroundColor: '#D9D9D9',
+          display: 'flex',
+          justifyContent: 'center'
+        }}
+      >
+        <Bar data={data} options={options} />;
+      </Box>
+    </Box>
+  )
+  
 }
 
 export default SpendingChart;

@@ -17,7 +17,7 @@ function SpendingBanner() {
       >
           <Typography
             style={{
-              fontSize: '2.5vh',
+              fontSize: '1.25vw',
               fontWeight: 'bold'
             }}
           >

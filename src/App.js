@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import HomePage from './components/Home/HomePage';
+import PageContent from './components/PageContent';
 
 function App() {
   return (
@@ -8,11 +8,11 @@ function App() {
       <Routes>
         <Route
           path="/budget-buddy"
-          element={<HomePage />}
+          element={<PageContent />}
         />
         <Route
           path="/"
-          element={<HomePage />}
+          element={<PageContent />}
         />
       </Routes>
     </BrowserRouter>

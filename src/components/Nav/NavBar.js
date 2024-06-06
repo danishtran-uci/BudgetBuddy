@@ -15,21 +15,21 @@ const spanStyle = {
 }
 
 const iconStyle = {
-  fontSize: '10vh',
+  fontSize: '4vw',
   paddingRight: '1vw'
 }
 
 const textStyle = {
   fontWeight: 'bold',
-  fontSize: '4vh',
+  fontSize: '2vw',
 }
 
-function NavBar() {
+function NavBar( { homeRef, dataRef, budgetRef, scrollToRef } ) {
   return (
     <Box
       style={{
-        width: '20vw',
-        height: '100vh',
+        width: '100%',
+        height: '100%',
         backgroundColor: '#D9D9D9',
       }}
     >
@@ -53,28 +53,22 @@ function NavBar() {
             borderRadius: '50%',
           }}
         />
-        <span style={spanStyle}>
+        <span style={spanStyle} onClick={() => scrollToRef(homeRef)}>
           <HomeIcon style={iconStyle} />
           <Typography style={textStyle}>
             Home
           </Typography>
         </span>
-        <span style={spanStyle}>
+        <span style={spanStyle} onClick={() => scrollToRef(dataRef)}>
           <ListIcon style={iconStyle} />
           <Typography style={textStyle}>
             Data
           </Typography>
         </span>
-        <span style={spanStyle}>
+        <span style={spanStyle} onClick={() => scrollToRef(budgetRef)}>
           <SavingsIcon style={iconStyle} />
           <Typography style={textStyle}>
             Budget
-          </Typography>
-        </span>
-        <span style={spanStyle}>
-          <SettingsIcon style={iconStyle} />
-          <Typography style={textStyle}>
-            Settings
           </Typography>
         </span>
       </Box>

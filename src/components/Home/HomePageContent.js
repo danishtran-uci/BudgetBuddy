@@ -1,22 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Box } from '@mui/material';
-import SpendingChart from './SpendingChart';
+import SpendingChart from './chart/SpendingChart';
 import TopComp from './topSection/TopComp';
 import SpendingReviewSectionComp from './spendingReviewSection/SpendingReviewSectionComp';
 
-function HomePageContent() {
-  const [purchaseData, setPurchaseData] = useState([]);
-
-  function handleAddPurchaseData(data) {
-    setPurchaseData([...purchaseData, data]);
-  };
-
+function HomePageContent({ purchaseData, handleAddPurchaseData, budget }) {
   return (
     // Main Container for defining size of the component   
     <Box
       style={{
-        width:'80vw',
-        height:'100vh',
+        width:'100%',
+        height:'100%',
       }}
     >
       {/* Container for holding whole component's content */}
@@ -31,22 +25,9 @@ function HomePageContent() {
       >
         <TopComp handleAddPurchaseData={handleAddPurchaseData} />        
 
-        <SpendingReviewSectionComp />
+        <SpendingReviewSectionComp purchaseData={purchaseData} budget={budget} />
 
-        {/* Container for Chart */}
-        <Box
-          style={{
-            width:'100%',
-            height:'60%',
-            marginTop: '5vh',
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems:'center',
-            justifyContent: 'space-evenly',
-          }}
-        >
-          <SpendingChart purchaseData={purchaseData}/>
-        </Box>
+        <SpendingChart purchaseData={purchaseData}/>
       </Box>
     </Box>
   );

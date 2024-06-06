@@ -19,7 +19,7 @@ function WelcomeBanner() {
         {/* Text within banner */}
         <Typography
           style={{
-            fontSize: '3vh',
+            fontSize: '2vw',
             fontWeight: 'bold'
           }}
         >

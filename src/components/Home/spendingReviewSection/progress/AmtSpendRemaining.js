@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import React from 'react';
 
-function AmtSpendRemaining() {
+function AmtSpendRemaining( {budget, monthSpending} ) {
   return (
     <>
       {/* Amount Spend and Remaining */}
@@ -12,6 +12,7 @@ function AmtSpendRemaining() {
           display: 'flex',
           flexDirection: 'row',
           justifyContent: 'center',
+          overflow: 'hidden',
         }}
       >
         {/* Amount Spend*/}
@@ -30,10 +31,10 @@ function AmtSpendRemaining() {
           <Typography
             style={{
               fontWeight: 'bold',
-              fontSize: '2vh',
+              fontSize: '1vw',
             }}
           >
-            Amount Spend: Temp
+            Amount Spend: {monthSpending}
           </Typography>
         </Box>
 
@@ -52,10 +53,10 @@ function AmtSpendRemaining() {
           <Typography
             style={{
               fontWeight: 'bold',
-              fontSize: '2vh',
+              fontSize: '1vw',
             }}
           >
-            Amount Remaining: Temp
+            Amount Remaining: {(budget - monthSpending)}
           </Typography>
         </Box>
       </Box>

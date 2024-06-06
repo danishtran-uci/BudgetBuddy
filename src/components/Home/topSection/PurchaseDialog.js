@@ -34,7 +34,11 @@ function PurchaseDialog(props) {
       onClose={handleClose} 
       open={open}
     >
-      <DialogTitle>Add New Purchase Data</DialogTitle>
+      <DialogTitle
+        style={{
+          fontSize: '1.5vw',
+        }}
+      >Add New Purchase Data</DialogTitle>
       <DialogContent>
         <Autocomplete
           id="type"
@@ -45,7 +49,11 @@ function PurchaseDialog(props) {
           onChange={(_, value) => setPurchaseData({ ...purchaseData, type: value })}
         />
         <CurrencyTextField
-          style={{ width: '100%' }}
+          style={{ 
+            width: '100%',
+            marginTop: '1vh',
+            marginBottom: '1vh',
+          }}
           label="Purchase Amount"
           placeholder="0.00"
           variant="outlined"
