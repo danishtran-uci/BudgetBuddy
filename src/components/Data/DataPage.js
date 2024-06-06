@@ -84,7 +84,7 @@ function DataPage({ purchaseData }) {
             <TableFooter>
               <TableRow>
                 <TablePagination
-                  rowsPerPageOptions={[5, 10, 15]}
+                  rowsPerPageOptions={[5, 10]}
                   count={rows.length}
                   rowsPerPage={rowsPerPage}
                   page={page}
