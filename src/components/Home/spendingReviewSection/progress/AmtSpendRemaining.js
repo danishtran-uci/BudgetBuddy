@@ -34,7 +34,7 @@ function AmtSpendRemaining( {budget, monthSpending} ) {
               fontSize: '1vw',
             }}
           >
-            Amount Spend: {monthSpending}
+            Amount Spend: ${monthSpending}
           </Typography>
         </Box>
 
@@ -56,7 +56,7 @@ function AmtSpendRemaining( {budget, monthSpending} ) {
               fontSize: '1vw',
             }}
           >
-            Amount Remaining: {(budget - monthSpending)}
+            Amount Remaining: ${(budget - monthSpending)}
           </Typography>
         </Box>
       </Box>

@@ -76,7 +76,7 @@ function DataPage({ purchaseData }) {
                   <TableCell component="th" scope="row">
                     {row.type}
                   </TableCell>
-                  <TableCell align="right">{row.amount}</TableCell>
+                  <TableCell align="right">${row.amount}</TableCell>
                   <TableCell align="right">{row.month}</TableCell>
                 </TableRow>
               ))}
