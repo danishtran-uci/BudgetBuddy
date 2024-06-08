@@ -50,7 +50,7 @@ function BudgetPage( {budget, setBudget} ) {
             marginBottom: '3vh'
           }}
         >
-          Old Budget: ${budget}
+          Current Budget: ${budget}
         </Typography>
         <CurrencyTextField
           style={{ 
