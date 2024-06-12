@@ -77,23 +77,23 @@ function SpendingChart({ purchaseData }) {
         justifyContent: 'space-evenly',
       }}
     >
+      <Typography
+        style={{
+          width: '10%',
+          marginLeft: '-3vw'
+        }}
+      >
+        Tip: Click categories at the top of the chart to show and hide categories in the chart
+      </Typography>
       <Box
         style={{
           width:'75%',
           height:'90%',
           backgroundColor: '#D9D9D9',
           display: 'flex',
-          justifyContent: 'center'
+          justifyContent: 'center',
         }}
       >
-        <Typography
-          style={{
-            width: '10%',
-            marginLeft: '-6vw'
-          }}
-        >
-          Tip: Click categories at the top of the chart to show and hide categories in the chart
-        </Typography>
         <Bar data={data} options={options} />;
       </Box>
     </Box>
