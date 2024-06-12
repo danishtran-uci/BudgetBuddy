@@ -4,7 +4,6 @@ import profileIcon from './penguin.jpg';
 import HomeIcon from '@mui/icons-material/Home';
 import ListIcon from '@mui/icons-material/List';
 import SavingsIcon from '@mui/icons-material/Savings';
-import SettingsIcon from '@mui/icons-material/Settings';
 
 const spanStyle = {
   display: 'flex',

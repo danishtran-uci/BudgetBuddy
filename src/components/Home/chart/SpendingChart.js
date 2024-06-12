@@ -1,7 +1,7 @@
 import React from 'react';
 import { Bar } from 'react-chartjs-2';
 import 'chart.js/auto';
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 const options = {
   scales: {
@@ -79,13 +79,21 @@ function SpendingChart({ purchaseData }) {
     >
       <Box
         style={{
-          width:'65%',
+          width:'75%',
           height:'90%',
           backgroundColor: '#D9D9D9',
           display: 'flex',
           justifyContent: 'center'
         }}
       >
+        <Typography
+          style={{
+            width: '10%',
+            marginLeft: '-6vw'
+          }}
+        >
+          Tip: Click categories at the top of the chart to show and hide categories in the chart
+        </Typography>
         <Bar data={data} options={options} />;
       </Box>
     </Box>

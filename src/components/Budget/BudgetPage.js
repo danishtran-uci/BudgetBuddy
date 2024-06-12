@@ -2,9 +2,14 @@ import React, { useState } from 'react';
 import { Box, Button, Typography } from '@mui/material';
 import CurrencyTextField from '@lupus-ai/mui-currency-textfield/dist/CurrencyTextField';
 
-function BudgetPage( {budget, setBudget} ) {
+function BudgetPage( {budget, setBudget, homeRef, scrollToRef} ) {
   const [enteredBudget, setEnteredBudget] = useState(0)
 
+  function submitNewBudget(newBudget) {
+    setBudget(newBudget)
+    scrollToRef(homeRef)
+  }
+  
   return (
     // Main Container for defining size of the component 
     <Box
@@ -71,7 +76,7 @@ function BudgetPage( {budget, setBudget} ) {
             width: '30%',
           }}
           variant="contained"
-          onClick={() => setBudget(enteredBudget)}
+          onClick={() => submitNewBudget(enteredBudget)}
         >Submit</Button>
       </Box>
     </Box>

@@ -121,7 +121,7 @@ function PageContent() {
         </Box>
 
         <Box ref={budgetRef} style={pageContentStyle}>
-          <BudgetPage budget={budget} setBudget={setBudget} />
+          <BudgetPage budget={budget} setBudget={setBudget} homeRef={homeRef} scrollToRef={scrollToRef}/>
         </Box>
       </Box>
     </Box>
